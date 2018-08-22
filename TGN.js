@@ -21,9 +21,3 @@ function openPage(pageName, elmnt, color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-
-function registerRCFunction() {
-  var x = document.getElementById("myForm").elements[0].value;
-  document.getElementById("demo").innerHTML = x;
-  return false;
-}

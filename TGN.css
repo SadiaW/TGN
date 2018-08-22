@@ -4,7 +4,7 @@ body, html {
   margin: 0;
   padding: 25px;
   font-family: Arial;
-  background-image: url("flower.jpg");
+  background-image: url("flower.png");
 }
 
 #title {
@@ -18,10 +18,17 @@ h3 {
 }
 
 h4 {
-    border-color: green;
-  border-top-style: dotted;
-  border-bottom-style: dotted;
-  width: 6%;
+  color: green
+}
+
+#Resource {
+  text-indent:1px;
+  font-size: 110%;
+  color: rgb(0, 51, 0)
+}
+
+ul.form {
+    list-style-type: square;
 }
 
 /* Style tab links */
@@ -32,11 +39,11 @@ h4 {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
   font-size: 17px;
-  width: 20%;
-  height: 10%
+  width: 16.66%;
+  height: 20%;
 }
+
 
 .tablink:hover {
   background-color: #777;
@@ -53,21 +60,26 @@ h4 {
 #Home {background-color: rgb(71, 209, 71);}
 #About {background-color: rgb(71, 209, 71);}
 #Register {background-color: rgb(71, 209, 71);}
+#Resource {background-color: rgb(71, 209, 71);}
 #Contact {background-color: rgb(71, 209, 71);}
 #Map {background-color: rgb(71, 209, 71);}
 
+input[type=button] {
+  padding: 14px;
+}
+
 input[type=text]{
-    position: relative;
-    width: 96%;
-    padding: 18px;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
+  position: relative;
+  width: 96%;
+  padding: 18px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
 }
 
 input[type=text]:focus {
-    background-color: #ddd;
-    outline: none;
+  background-color: #ddd;
+  outline: none;
   }
 
 .modal{
@@ -103,57 +115,57 @@ input[type=text]:focus {
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
-    align-items: left;
-    padding: 14px 10px;
-    border: none;
-    cursor: pointer;
-    width: 40%;
-    opacity: 0.9;
+  background-color: #4CAF50;
+  color: white;
+  align-items: left;
+  padding: 14px 10px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
 }
 
 button:hover {
-    opacity: 15;
-    background-color: #3c8c40;
+  opacity: 15;
+  background-color: #3c8c40;
 }
 
 hr {
-    border: 5px solid #f1f1f1;
+  border: 5px solid #f1f1f1;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    font-family: serif;
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%; /* Full width */
+  font-family: serif;
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
 input {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 /* Add a background color and some padding around the form */
 .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    color: #000000;
-    padding: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #000000;
+  padding: 20px;
 }
