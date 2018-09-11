@@ -18,10 +18,10 @@
       }
     </style>
   </head>
-  
   <body>
     <div id="map"></div>
     <script>
+
       function initMap() {
         var nycpantry = {lng: -73.949230 , lat: 40.795770};
         var trinity = {lng:-73.980190 , lat:40.726040};
@@ -35,70 +35,88 @@
         var singlePar = {lng: -73.992323, lat: 40.746964};
         var AltLGBTQ = {lng:-73.994330, lat:40.757224};
         var Urban = {lng: -74.011233, lat: 40.704617};
+
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 9.5,
           center: nycpantry
         });
+
         var marker = new google.maps.Marker({
           position: nycpantry,
           map: map,
           title: 'New York Common Pantry'
         });
+
         var marker = new google.maps.Marker({
           position: trinity,
           map: map,
           title: 'Trinity’s Services & Good for the Homeless:'
         });
+
         var marker = new google.maps.Marker({
           position: sures,
           map: map,
           title: 'Los Sures'
         });
+
         var marker = new google.maps.Marker({
           position: breadandlife,
           map: map,
           title: 'St. John’s Bread & Life'
         });
+
         var marker = new google.maps.Marker({
           position: coalHome,
           map: map,
           title: 'Coalition for the Homeless'
         });
+
         var marker = new google.maps.Marker({
           position: irisH,
           map: map,
           title: 'Iris House Eastside'
         });
+
         var marker = new google.maps.Marker({
           position: coveN,
           map: map,
           title: 'Covenant House New York '
         });
+
         var marker = new google.maps.Marker({
           position:partHome,
           map: map,
           title: 'Partnership For the Homeless'
         });
+
         var marker = new google.maps.Marker({
           position:BowCom,
           map: map,
           title: 'Bowery Residents’ Committee'
         });
+
         var marker = new google.maps.Marker({
           position:singlePar,
           map: map,
           title: 'Single Parent Resource Center Inc'
         });
+
         var marker = new google.maps.Marker({
           position:AltLGBTQ,
           map: map,
           title: 'New Alternatives For LGBT Homeless Youth'
         });
+
         var marker = new google.maps.Marker({
           position:Urban,
           map: map,
           title: 'Urban Resource Institute'
         });
+
+
+
+
+
       }
     </script>
     <script async defer

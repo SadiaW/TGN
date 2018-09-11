@@ -1,167 +1,426 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
   <title>The Giving NYC</title>
+
    <link rel="stylesheet" type="text/css" href="TGN.css">
+
    <script type="text/javascript" src="TGN.js"></script>
+
 </head>
 
+
+
 <body>
+
   <div id=title>
+
     <h1><center>The Giving NYC</center></h1>
+
       <br>
+
         <button class="tablink" onclick="openPage('Home', this, 'rgb(31, 122, 31)')" id="defaultOpen">HOME</button>
+
         <button class="tablink" onclick="openPage('About', this, 'rgb(31, 122, 31)')">ABOUT US</button>
+
         <button class="tablink" onclick="openPage('Register', this, 'rgb(31, 122, 31)')">REGISTER</button>
+
         <button class="tablink" onclick="openPage('Resource', this, 'rgb(s31, 122, 31)')">RESOURCE CENTERS</button>
+
         <button class="tablink" onclick="openPage('Contact', this, 'rgb(31, 122, 31)')">CONTACT US</button>
+
         <input type="button" class="tablink" onclick="location.href='google.html';" value="OPEN MAP"/>
+
   </div>
+
+
 
   <div id="Home" class="tabcontent">
+
       <h2><center>The Giving NYC</center></h2>
+
         <center><img src="tgnlogo.PNG" width="500" height="500"></center>
+
       <h2><p><center><strong>"No one has ever become poor by giving"-Anne Frank</strong></center></p></h2>
+
   </div>
+
+
 
   <div id="About" class="tabcontent">
+
     <center><img src="about.PNG" width="900" height="100"></center>
+
       <h3>What We Do</h3>
+
         <p>We connect established distributors in need of resources, such as homeless shelters or certain churches, to individuals, organizations,
+
         and companies that want to and have the resources to help! Our goals are based on improving accessibility and the allocation of resources.
+
         New York has people that want to help and people that are in need, we create an effective way to connect them. By registering, you are
+
         becoming part of a network in which everyone is dedicated to helping the homeless of New York. Donors and resource centers that are
+
         registered with the site are connected based on location and resources and services that can be provided or are needed. By establishing
+
         these connections, we hope initiate and foster relationships between resource centers and donors that will ultimately optimize the efficiency
+
         and power that giving resources can have, affecting the quality of life of people in need across all five boroughs.</p>
+
       <h3>Who We Are</h3>
+
         <p>The Giving NYC is the brainchild of the Girls Who Code summer immersion program participants. Using our new knowledge of coding and our desire
+
         to effect change in our community, we came up with the concept of The Giving NYC. The idea is to create systematic change to the way that people
+
         serve the homeless; creating a network will improve the efficiency, accessibility, and utility of donated resources.</p>
+
       <h4>Anabella</h4>
+
         <p>Anabella is a senior at Hunter College High School in Manhattan and has lived in New York her entire life. She has a passion for technology and
+
         the life sciences, and is deeply committed to improving the Hunter community as whole.  The Giving NYC allows her to connect and continue her passion
+
         for giving back to her community through her skills and interests in coding. </p>
+
       <h4>Ishani</h4>
+
         <p>Ishani Chakravorty is a junior at the Dwight School. She has had a home in 5 different countries and moved to New York a year ago. She volunteers
+
         and works for organizations that work to provide homes, education and health for families in need. Through The Giving NYC, she feels that people
+
         will not only give back to the community but also have a strong and long lasting connection.</p>
+
       <h4>Sadia</h4>
+
         <p>Sadia Wahid is a junior at Hillcrest High School who aspires to make the world a better and safer place for people to thrive in. She has
+
         resided in New York for most her life with intentions to improve the conditions of her community. She is devoted towards computer science,
+
         sociology, and art, thus enabling her to start and partake in The Giving NYC with her fellow teammates. Her skills in coding and web designing
+
         enables her to raise awareness against a prominent issue that persists today.</p>
+
   </div>
+
+
 
   <div id="Register" class="tabcontent">
-    <a><button onclick="document.getElementById('id01').style.display='block'" id="openmodal" onclick=document.getElementById('openmodal').style.display='none' style="width:auto;">Register</button></a>
+
+    <a><button onclick="document.getElementById('id01').style.display='block'" id="openmodal" onclick=document.getElementById('openmodal').style.display='none' style="width:auto;">Register as a Resource Center</button></a>
+    <a><button onclick="document.getElementById('id02').style.display='block'" id="openmodal" onclick=document.getElementById('openmodal').style.display='none' style="width:auto;">Register as a Donor</button></a>
       <div id="id01" class= "modal">
+
         <form id="myForm"  class="custom-select" style="border:1px solid #ccc">
+
           <h1>Register</h1>  <span onclick="document.getElementById('id01').style.display='none'" class="close">&times</span>
-            <p> Please fill out this form to register with our network </p>
+
+            <p> Please fill out this form to register with our network as a resource center </p>
+
               <hr>
+
               <br>
+
               <br>
+
                 Email:<br>
+
                   <input type="text" placeholder="ex: officialemail@gmail.com" name= "email" required><br>
+
               <br>
+
                 Name of Organization:<br>
+
                   <input type="text" placeholder="ex: Homeless Shelter NYC" id="orgname" name="name" required><br>
+
               <br>
+
                 Address: <br>
+
                   <input type="text" placeholder="Name, Street Adress, City, State, Zip Code" name="address" required><br>
+
               <br>
+
         <div>
+
           Resources Needed: <select name="needs" >
+
             <option value="" disabled selected>Select all needed resources</option>
+
             <optgroup label="clothes">
+
             <option type="checkbox" value="1">Infants</option>
+
             <option value="2">Kids</option>
+
             <option value="3">Adults</option>
+
             </optgroup>
-              <option value="4">Money</option>
+
+              <option value="4">Funding</option>
+
               <option value="5">Other</option>
+
               <option value="6">Services</option>
+
               <optgroup label="Menstrual Products">
+
               <option value="7">Pads</option>
+
               <option value="8">Menstrual Cups</option>
+
               <option value="9">Tampons</option>
+
               </optgroup>
+
           </select>
+
         </div>
+
           <br>
+
             If "Services" or "Other" selected, please specify:
+
               <input type="text" name="other" placeholder="Haircuts, Entertainment, etc."><br>
+
                 <br>
+
                 <br>
-                  <button class="Resetbtn" type="reset" value="reset">Reset</button>
+
+                  <button class="Resetbtn" type="reset" value="reset">Reset</button>  <button class="Resetbtn" type="reset" value="reset">Submit</button>
+
             </form>
+
       </div>
+      <div id="id02" class= "modal">
+
+        <form id="myForm2"  class="custom-select" style="border:1px solid #ccc">
+
+          <h1>Register</h1>  <span onclick="document.getElementById('id02').style.display='none'" class="close">&times</span>
+
+            <p> Please fill out this form to register with our network as a donor </p>
+
+              <hr>
+
+              <br>
+
+              <br>
+
+              Please specify if you are an individual, company, or nonprofit:  <select name="donortype" >
+                <option value="11"Individual></option>
+                <option Company></option>
+                <option Nonprofit></option>
+              </select>
+              <br>
+
+                Name of Organization:<br>
+
+                  <input type="text" placeholder="ex: Most Generous Company in NY" id="orgname" name="name" required><br>
+
+              <br>
+
+              Email:<br>
+
+                <input type="text" placeholder="ex: officialemail@gmail.com" name= "email" required><br>
+
+            <br>
+
+                Address: <br>
+
+                  <input type="text" placeholder="Name, Street Adress, City, State, Zip Code" name="address" required><br>
+
+              <br>
+
+        <div>
+
+          What resources can you provide? <select name="needs" >
+
+            <option value="" disabled selected>Select resources</option>
+
+            <optgroup label="clothes">
+
+            <option type="checkbox" value="1">Infants</option>
+
+            <option value="2">Kids</option>
+
+            <option value="3">Adults</option>
+
+            </optgroup>
+
+              <option value="7">Bottled Water</option>
+
+              <option value="8">School Supplies</option>
+
+              <option value="9">Non-Prescription Medecine</option>
+
+              <option value="4">Funding</option>
+
+              <option value="5">Other</option>
+
+              <option value="6">Volunteer Services</option>
+
+              <optgroup label="Menstrual Products">
+
+              <option value="7">Pads</option>
+
+              <option value="8">Menstrual Cups</option>
+
+              <option value="9">Tampons</option>
+
+              </optgroup>
+
+          </select>
+
+        </div>
+
+          <br>
+
+            If "Services" or "Other" selected, please specify:
+
+              <input type="text" name="other" placeholder="Haircuts, Entertainment, etc."><br>
+
+                <br>
+
+                <br>
+
+                  <button class="Resetbtn" type="reset" value="reset">Reset</button>  <button class="Resetbtn" type="reset" value="reset">Submit</button>
+
+            </form>
         <p id="demo"></p>
-        <button onclick="registerRCFunction()">Displayresults</button>
-  </div>
 
-  <div id="Resource" class="tabcontent">
-    <ul class="form">
-      <h2><strong>List of Resource Centers</strong></h2>
-        <li><a href="http://nycommonpantry.org/?gclid=CjwKCAjw2MTbBRASEiwAdYIpsR0_6SSsQFOcDlTHvqeaiFBPNk7KKBQYCDXKrMbuKflx5WanysV4lxoCHogQAvD_BwE">New York Common Pantry</a><br>
-        8 E 109th St, New York, NY 10029</br></li>
-        <br>
-        <li><a href="http://safhnyc.org/">Trinity’s Services & Good for the Homeless</a><br>
-        602 E 9th St, New York, NY 10009</br></li>
-        <br>
-        <li><a href="http://www.southsideunitedhdfc.org/about-us/our-work/social-services/">Los Sures</a><br>
-        145 S 3rd St, Brooklyn, NY 11211</br></li>
-        <br>
-        <li><a href="https://www.breadandlife.org/get-involved/volunteer?gclid=CjwKCAjw2MTbBRASEiwAdYIpsV3O-8D1l_mFtXeNUGwC-lz3jj2YOLTBWYt_fpIzEpPPzxnaAgdmuBoCi9EQAvD_BwE">St. John’s Bread & Life</a><br>
-        795 Lexington Ave, Brooklyn, NY 11221</br></li>
-        <br>
-        <li><a href="http://www.coalitionforthehomeless.org/">Coalition for the Homeless</a><br>
-        129 Fulton St, New York, NY 10038</br></li>
-        <br>
-        <li><a href="http://www.irishouse.org/">Iris House Eastside</a><br>
-        2271 2nd Ave, New York, NY 10035</br></li>
-        <br>
-        <li><a href="https://ny.covenanthouse.org/">Covenant House New York</a><br>
-        460 W 41st St, New York, NY 10036</br></li>
-        <br>
-        <li><a href="http://www.partnershipforthehomeless.org/">Partnership For the Homeless</a><br>
-        100 Pennsylvania Ave #2, Brooklyn, NY 11207</br></li>
-        <br>
-        <li><a href="http://www.brc.org/">Bowery Residents’ Committee</a><br>
-        131 W 25th St, New York, NY 10001</br></li>
-        <br>
-        <li><a href="http://www.singleparentusa.com/">Single Parent Resource Center Inc</a><br>
-        141 W 28th St, New York, NY 10001</br></li>
-        <br>
-        <li><a href="https://www.newalternativesnyc.org/">New Alternatives For LGBT Homeless Youth</a><br>
-        410 W 40th St, New York, NY 10018</br></li>
-        <br>
-        <li><a href="http://urinyc.org/">Urban Resource Institute</a><br>
-        75 Broad St, New York, NY 10004</br></li>
-    </ul>
-  </div>
-
-  <div id="Contact" class="tabcontent">
-    <div class="container">
-      <form action="/action_page.php">
-        <p><label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name.."></p>
-        <p><label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.."></p>
-        <p><label for="Email">Email</label>
-          <input type="text" id="Email" name="email" placeholder="Your email.."></p>
-        <p><label for="subject">Comment</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; width: 100%"></textarea></p>
-                <address>
-                  Email us: <a href="mailto:thegivingnyc@gmail.com">thegivingnyc@gmail.com</a>.<br>
-                </address>
-                  <br>
-                  <br>
-                    <input type="submit" value="Submit">
-      </form>
+        <!--<button onclick="registerRCFunction()">Displayresults</button>-->
     </div>
   </div>
 
+
+
+  <div id="Resource" class="tabcontent">
+
+    <ul class="form">
+
+      <h2><strong>List of Resource Centers</strong></h2>
+
+        <li><a href="http://nycommonpantry.org/?gclid=CjwKCAjw2MTbBRASEiwAdYIpsR0_6SSsQFOcDlTHvqeaiFBPNk7KKBQYCDXKrMbuKflx5WanysV4lxoCHogQAvD_BwE">New York Common Pantry</a><br>
+
+        8 E 109th St, New York, NY 10029</br></li>
+
+        <br>
+
+        <li><a href="http://safhnyc.org/">Trinitys Services & Good for the Homeless</a><br>
+
+        602 E 9th St, New York, NY 10009</br></li>
+
+        <br>
+
+        <li><a href="http://www.southsideunitedhdfc.org/about-us/our-work/social-services/">Los Sures</a><br>
+
+        145 S 3rd St, Brooklyn, NY 11211</br></li>
+
+        <br>
+
+        <li><a href="https://www.breadandlife.org/get-involved/volunteer?gclid=CjwKCAjw2MTbBRASEiwAdYIpsV3O-8D1l_mFtXeNUGwC-lz3jj2YOLTBWYt_fpIzEpPPzxnaAgdmuBoCi9EQAvD_BwE">St. Johns Bread & Life</a><br>
+
+        795 Lexington Ave, Brooklyn, NY 11221</br></li>
+
+        <br>
+
+        <li><a href="http://www.coalitionforthehomeless.org/">Coalition for the Homeless</a><br>
+
+        129 Fulton St, New York, NY 10038</br></li>
+
+        <br>
+
+        <li><a href="http://www.irishouse.org/">Iris House Eastside</a><br>
+
+        2271 2nd Ave, New York, NY 10035</br></li>
+
+        <br>
+
+        <li><a href="https://ny.covenanthouse.org/">Covenant House New York</a><br>
+
+        460 W 41st St, New York, NY 10036</br></li>
+
+        <br>
+
+        <li><a href="http://www.partnershipforthehomeless.org/">Partnership For the Homeless</a><br>
+
+        100 Pennsylvania Ave #2, Brooklyn, NY 11207</br></li>
+
+        <br>
+
+        <li><a href="http://www.brc.org/">Bowery Residents Committee</a><br>
+
+        131 W 25th St, New York, NY 10001</br></li>
+
+        <br>
+
+        <li><a href="http://www.singleparentusa.com/">Single Parent Resource Center Inc</a><br>
+
+        141 W 28th St, New York, NY 10001</br></li>
+
+        <br>
+
+        <li><a href="https://www.newalternativesnyc.org/">New Alternatives For LGBT Homeless Youth</a><br>
+
+        410 W 40th St, New York, NY 10018</br></li>
+
+        <br>
+
+        <li><a href="http://urinyc.org/">Urban Resource Institute</a><br>
+
+        75 Broad St, New York, NY 10004</br></li>
+
+    </ul>
+
+  </div>
+
+
+
+  <div id="Contact" class="tabcontent">
+
+    <div class="container">
+
+      <form action="/action_page.php">
+        <address>
+
+          Submit to email us at <a href="mailto:thegivingnyc@gmail.com">thegivingnyc@gmail.com</a>.<br>
+
+        </address>
+
+        <p><label for="fname">First Name</label>
+
+          <input type="text" id="fname" name="firstname" placeholder="Your name.."></p>
+
+        <p><label for="lname">Last Name</label>
+
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.."></p>
+
+        <p><label for="Email">Email</label>
+
+          <input type="text" id="Email" name="email" placeholder="Your email.."></p>
+
+        <p><label for="subject">Comment</label>
+
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; width: 100%"></textarea></p>
+
+
+                  <br>
+
+                  <br>
+
+                    <input type="submit" value="Submit">
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+
 </body>
+
 </html>
